@@ -1,3 +1,4 @@
+
 """
 Django settings for setup project.
 
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "pt-br"
 
-TIME_ZONE = "America/Sao_paulo"
+TIME_ZONE = "America/Sao_Paulo"
 
 USE_I18N = True
 
@@ -119,11 +120,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = 'static/'
 
-STATICFILES_DIRS =[ #ele esta criando uma pasta com os arquivos estaticos
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'setup/static')
 ]
 
-# caminho absluto para pegar todos os caminhos de arquivos estaticos para ele fazer a inplantaçao
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
